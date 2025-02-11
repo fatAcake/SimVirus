@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="IVirus.cs" />
     <Compile Include="Killar.cs" />
+    <Compile Include="Observer.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

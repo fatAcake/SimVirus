@@ -21,8 +21,15 @@ namespace ConsoleApp1.Utils
         private int _maxDays;
         private int _day;
         private Virus _virus;
+        private int _faillill;
+        private int _recovered;
 
+        public int FallIll=>_faillill;
+        public int Recovered => _recovered;
+        public int MaxDayes{get;}
         public int Days => _day;
+        public int TotalPopulation=>_alive.Count;
+        public int DeadPopulation=>_dead.Count;
         public Simulator(int countPopulation, int maxDays, Virus virus)
         {
             _day = 1;
@@ -117,6 +124,7 @@ namespace ConsoleApp1.Utils
                                 if (!meeting.Status)
                                 {
                                     _virus.Infect(meeting);
+                                    _faillill++;
                                 }
                             }
 
@@ -154,5 +162,8 @@ namespace ConsoleApp1.Utils
             }
 
         }
+        
+        
+        
     }
 }
