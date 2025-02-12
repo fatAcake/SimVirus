@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\student\\documents\\simvirus\\consoleapp1\\consoleapp1\\utils\\simulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\consoleapp1\\utils\\simulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\utils\\simulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\consoleapp1\\utils\\gousian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\utils\\gousian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\student\\documents\\simvirus\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\consoleapp1\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\consoleapp1\\ivirus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\ivirus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\student\\documents\\simvirus\\consoleapp1\\consoleapp1\\observer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\consoleapp1\\observer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\observer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\consoleapp1\\killar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\killar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\consoleapp1\\virus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\virus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\consoleapp1\\ivirus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\ivirus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\consoleapp1\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\consoleapp1\\utils\\gousian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\utils\\gousian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\consoleapp1\\killar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\killar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,33 +50,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Observer.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\ConsoleApp1\\Observer.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Observer.cs",
               "ToolTip": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\ConsoleApp1\\Observer.cs",
               "RelativeToolTip": "ConsoleApp1\\Observer.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T04:01:20.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Simulator.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\ConsoleApp1\\Utils\\Simulator.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Utils\\Simulator.cs",
               "ToolTip": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\ConsoleApp1\\Utils\\Simulator.cs",
               "RelativeToolTip": "ConsoleApp1\\Utils\\Simulator.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwB8AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAwwDkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T03:44:50.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Gousian.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\ConsoleApp1\\Utils\\Gousian.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Utils\\Gousian.cs",
@@ -89,62 +89,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Killar.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\ConsoleApp1\\Killar.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Killar.cs",
               "ToolTip": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\ConsoleApp1\\Killar.cs",
               "RelativeToolTip": "ConsoleApp1\\Killar.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T02:54:44.625Z"
+              "WhenOpened": "2025-02-04T02:54:44.625Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\ConsoleApp1\\Person.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Person.cs",
               "ToolTip": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\ConsoleApp1\\Person.cs",
               "RelativeToolTip": "ConsoleApp1\\Person.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA1wBkAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAswDoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-30T04:01:41.905Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Virus.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\ConsoleApp1\\Virus.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Virus.cs",
               "ToolTip": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\ConsoleApp1\\Virus.cs",
               "RelativeToolTip": "ConsoleApp1\\Virus.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T03:05:11.564Z"
+              "WhenOpened": "2025-01-30T03:05:11.564Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "IVirus.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\ConsoleApp1\\IVirus.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\IVirus.cs",
               "ToolTip": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\ConsoleApp1\\IVirus.cs",
               "RelativeToolTip": "ConsoleApp1\\IVirus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T02:53:48.552Z"
+              "WhenOpened": "2025-01-30T02:53:48.552Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\ConsoleApp1\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
               "ToolTip": "C:\\Users\\Student\\Documents\\SimVirus\\ConsoleApp1\\ConsoleApp1\\Program.cs",
               "RelativeToolTip": "ConsoleApp1\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAQwCYAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-29T08:53:18.128Z",
               "EditorCaption": ""

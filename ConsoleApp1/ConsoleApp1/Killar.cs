@@ -11,7 +11,7 @@ namespace ConsoleApp1
     {
         private static Random rand = new Random();
         public Killar(string code, bool reinfection, float infection,
-            float letality) : base(code, reinfection, infection, letality)
+            float letality,int da) : base(code, reinfection, infection, letality,da)
         {
             _letality = letality+(float)rand.Next(-10, 10) / 100;
         }
@@ -29,7 +29,7 @@ namespace ConsoleApp1
         {
             if (person.Immunity <= Infection)
             {
-                person.Status = true;
+                person.Infect();
             }
         }
     }

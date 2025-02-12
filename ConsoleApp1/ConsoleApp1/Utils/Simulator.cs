@@ -24,6 +24,7 @@ namespace ConsoleApp1.Utils
         private int _faillill;
         private int _recovered;
 
+
         public int FallIll=>_faillill;
         public int Recovered => _recovered;
         public int MaxDayes{get;}
@@ -42,14 +43,20 @@ namespace ConsoleApp1.Utils
         public void RunSimmulation()
         {
             StartInfection();
-            for (int i = 0; i < _maxDays; i++)
+            for (int i = 0; i <= _maxDays; i++)
             {
                 _day = i;
+                _alive.RemoveAll((p) => {
+                    if (!p.IsAlive)
+                    {
+                        _dead.Add(p);
+                        return true;
+                    }
+                    return false;
+                    });
                 if (i % 365 == 0)
                 {
-
-                }
-                _alive.RemoveAll((p) =>
+                     _alive.RemoveAll((p) =>
                 {
                     p.UpdateAge();
                     if (p.Age >= p.MaxAge)
@@ -59,7 +66,9 @@ namespace ConsoleApp1.Utils
                     }
                     return false;
                 });
-                StartInfection();
+                }
+                
+                Infection();
                 Mortaliti();
                 Birth();
             }
@@ -100,7 +109,8 @@ namespace ConsoleApp1.Utils
         {
             for (int i = 0; i < Math.Round(_alive.Count * 0.02); i++)
             {
-                _alive.Find((p) => (p.Age >= _virus.AgeToInfect) && (!p.Status)).Status = true;
+                _alive.Find((p) => (p.Age >= _virus.AgeToInfect) && (!p.Status)).Infect();
+                _faillill++;
             }
             _alive = _alive.OrderBy(_ => _random.Next()).ToList();
         }
@@ -110,7 +120,16 @@ namespace ConsoleApp1.Utils
             
             foreach (var p in allInfected)
             {
-                if (p.UpdateInfection() != 0)
+                if (p.UpdateInfection() == _virus.DayToRecover)
+                {if(!_virus.Reinfection)
+                    {
+                        p.CreateTotalImmunity();
+                        p.Recover();
+                        continue;
+                    }
+                }
+
+                if (p.UpdateInfection() == 0)
                 {
                    
                     if (28 > _random.Next(0, 100))
@@ -131,14 +150,12 @@ namespace ConsoleApp1.Utils
                             
                             
                         }
-                    }
-                    else
-                    {
-                        if(!_virus.Reinfection)
-                        {
-                            p.CreateTotalImmunity();
-                        }
-                    }
+                    } 
+                }
+                else 
+                {
+                    if(_virus.Death(p))p.Detach();
+
                 }
 
             }

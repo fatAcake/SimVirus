@@ -18,6 +18,7 @@ namespace ConsoleApp1
         private bool _isAlive;
         private int _friends;
         private int _infectionDayes;
+        private bool _status;
 
         public int Age => _age;
         public int MaxAge => 80;
@@ -25,7 +26,7 @@ namespace ConsoleApp1
         public float Immunity => _immunity;
         public bool TotalImmunity => _totalImmunity;
         public bool IsAlive => _isAlive;
-        public bool Status { get; set; }
+        public bool Status =>_status;
         public int Friends => _friends;
         public Person(string Gender, int Age, float Immunity)
         {
@@ -35,7 +36,7 @@ namespace ConsoleApp1
             _totalImmunity = false;
             _isAlive = true;
             _friends = (int)Gousian.RandNormal(3, 1);
-            Status = false;
+            _status = false;
             _infectionDayes = 0;
             UpdateImmunity();
         }
@@ -55,8 +56,9 @@ namespace ConsoleApp1
             }
             UpdateImmunity();
         }
-        private void Detach() => _isAlive = false;
-
+        public void Detach() => _isAlive = false;
+        public void Infect()=>_status = true;
+        public void Recover()=>_status = false;
         public void CreateTotalImmunity() => _totalImmunity = true;
         private void UpdateImmunity()
         {
