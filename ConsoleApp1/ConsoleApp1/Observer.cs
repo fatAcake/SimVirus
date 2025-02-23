@@ -11,14 +11,14 @@ namespace ConsoleApp1
     internal class Observer
     {
         private Simulator _simulator;
-        private event Action<Simulator> OnEndSimulation;
+        public event Action<Simulator> OnEndSimulation;
         public Observer(ref Simulator simulator) 
         {
             _simulator = simulator; 
         }
         public void Start()
         {
-            var SimThread = new Thread(_simulator.RunSimmulation);
+            var SimThread = new Thread(_simulator.RunSimulation);
             SimThread.Start();
             var ExitThread = new Thread(() => EarlyExit(SimThread));
             ExitThread.Start();

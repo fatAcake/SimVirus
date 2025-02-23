@@ -15,94 +15,80 @@ namespace ConsoleApp1.Utils
         private const double _mortality = (double)14 / 1000;
         private const double _birthrate = (double)8 / 1000;
 
-        private static Random _random = new Random();
+        private static Random rand = new Random();
+
         private List<Person> _alive;
         private List<Person> _dead;
         private int _maxDays;
         private int _day;
         private Virus _virus;
-        private int _faillill;
+        private int _illed;
         private int _recovered;
-
-
-        public int FallIll=>_faillill;
-        public int Recovered => _recovered;
-        public int MaxDayes{get;}
         public int Days => _day;
-        public int TotalPopulation=>_alive.Count;
-        public int DeadPopulation=>_dead.Count;
-        public Simulator(int countPopulation, int maxDays, Virus virus)
+
+        public int TotalPopulation => _alive.Count;
+        public int DeadPopulation => _dead.Count;
+        public int Illed => _illed;
+        public int Recovered => _recovered;
+        public Simulator(int count, int maxDays, Virus virus)
         {
-            _day = 1;
-            _maxDays = maxDays;
             _alive = new List<Person>();
             _dead = new List<Person>();
+            _day = 1;
+            _maxDays = maxDays;
             _virus = virus;
-            Population(countPopulation);
+            _illed = 0;
+            _recovered = 0;
+            Population(count);
         }
-        public void RunSimmulation()
+        public void RunSimulation()
         {
             StartInfection();
-            for (int i = 0; i <= _maxDays; i++)
+            for (int i = 1; i < _maxDays; i++)
             {
                 _day = i;
-                _alive.RemoveAll((p) => {
+                _alive.RemoveAll((p) =>
+                {
                     if (!p.IsAlive)
                     {
                         _dead.Add(p);
                         return true;
                     }
                     return false;
-                    });
-                if (i % 365 == 0)
-                {
-                     _alive.RemoveAll((p) =>
-                {
-                    p.UpdateAge();
-                    if (p.Age >= p.MaxAge)
-                    {
-                        _dead.Add(p);
-                        return true;
-                    }
-                    return false;
                 });
-                }
-                
+                if (i % 365 == 0)
+                    _alive.RemoveAll((p) =>
+                    {
+                        p.UpdateAge();
+                        if (p.Age >= p.MaxAge)
+                        {
+                            _dead.Add(p);
+                            return true;
+                        }
+                        return false;
+                    });
+
                 Infection();
-                Mortaliti();
+                Mortality();
                 Birth();
             }
         }
-        public int InfectedPopulation() => _alive.FindAll((p) => p.Status).Count;
-
-        //private void UpdatePopulation(int Start, int Count)
-        //{
-        //    List<Person> list = _alive.GetRange(Start, Count);
-        //    foreach (Person person in list)
-        //    {
-        //        _dead.Add(person);
-        //        _alive.Remove(person);
-        //    }
-        //}
-        private void Mortaliti()
+        private void Mortality()
         {
-            int range = (int)Math.Round(_alive.Count * _mortality / 365);
-            List<Person> a = _alive.GetRange(0, range);
-            _alive.RemoveRange(0, (int)Math.Round(_alive.Count * _mortality));
-            for (int i = 0; i < a.Count; i++)
-            {
-                _dead.Add(a[i]);
-            }
+            int mort = (int)Math.Round(_mortality * _alive.Count / 365);
+            List<Person> toDead = _alive.GetRange(0, mort);
+            _alive.RemoveRange(0, mort);
+            _dead.AddRange(toDead);
         }
         private void Birth()
         {
-            int range = (int)Math.Round(_alive.Count * _mortality / 365);
-            for (int i = 0; i < range; i++)
+            int birth = (int)Math.Round(_birthrate * _alive.Count / 365);
+            for (int i = 0; i < birth; i++)
             {
-                Person person = new Person(
-                    _random.Next(0, 2) == 0 ? "Male" : "Famale", 0,
-                    _random.Next(65, 76) / 100);
-                _alive.Add(person);
+                Person newPerson = new Person(
+                    rand.Next(0, 2) == 0 ? "Ж" : "М", 0,
+                    (float)rand.Next(65, 76) / 100);
+                _alive.Add(newPerson);
             }
         }
         private void StartInfection()
@@ -110,77 +96,52 @@ namespace ConsoleApp1.Utils
             for (int i = 0; i < Math.Round(_alive.Count * 0.02); i++)
             {
                 _alive.Find((p) => (p.Age >= _virus.AgeToInfect) && (!p.Status)).Infect();
-                _faillill++;
+                _illed++;
             }
-            _alive = _alive.OrderBy(_ => _random.Next()).ToList();
+            _alive = _alive.OrderBy(_ => rand.Next()).ToList();
         }
         private void Infection()
         {
             var allInfected = _alive.FindAll((p) => p.Status);
-            
-            foreach (var p in allInfected)
+            foreach (Person p in allInfected)
             {
+                if (_virus.Death(p)) continue;
+
                 if (p.UpdateInfection() == _virus.DayToRecover)
-                {if(!_virus.Reinfection)
-                    {
+                {
+                    if (!_virus.Reinfection)
                         p.CreateTotalImmunity();
-                        p.Recover();
-                        continue;
+                    p.Recover();
+                    _recovered++;
+                    continue;
+                }
+                if (rand.Next(101) <= 28) continue;
+
+                for (int i = 0; i < p.Friends / 2; i++)
+                {
+                    Person meeting = _alive[rand.Next(0, _alive.Count)];
+                    if (!meeting.Status && meeting.Age >= _virus.AgeToInfect && !meeting.TotalImmunity)
+                    {
+                        _virus.Infect(meeting);
+                        _illed++;
                     }
                 }
-
-                if (p.UpdateInfection() == 0)
-                {
-                   
-                    if (28 > _random.Next(0, 100))
-                    {
-
-                        for (int i = 0; i < p.Friends /2; i++)
-                        {
-                            Person meeting = _alive[_random.Next(0, _alive.Count)];
-                            if (_virus.Reinfection && !meeting.TotalImmunity)
-                            {
-                                if (!meeting.Status)
-                                {
-                                    _virus.Infect(meeting);
-                                    _faillill++;
-                                }
-                            }
-
-                            
-                            
-                        }
-                    } 
-                }
-                else 
-                {
-                    if(_virus.Death(p))p.Detach();
-
-                }
-
             }
         }
-        private void Population(int countPopulation)
+        private void Population(int Count)
         {
-            string[] gender = new string[2] { "Male", "Famale" };
-            int maxAge = 29201;
-            double maxImmunity = 0.75;
-
-            for (int i = 0; i < countPopulation; i++)
+            for (int i = 0; i < Count; i++)
             {
-                Person person = new Person(
-                    gender[_random.Next(0, 2)],
-                    _random.Next(0, 81),
-                    _random.Next(65, 76) / 100);
-                if (person.Age >= person.MaxAge)
-                    _dead.Add(person);
+                Person newPerson = new Person(
+                    rand.Next(0, 2) == 0 ? "Ж" : "М",
+                    rand.Next(0, 81),
+                    (float)rand.Next(65, 76) / 100
+                    );
+                if (newPerson.Age >= newPerson.MaxAge)
+                    _dead.Add(newPerson);
                 else
-                    _alive.Add(person);
+                    _alive.Add(newPerson);
             }
-
         }
-        
-        
-        
     }
 }
