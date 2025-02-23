@@ -12,7 +12,7 @@ namespace ConsoleApp1
         protected bool _reinfection;
         protected float _infection;
         protected float _letality;
-        public int DayToRecover;
+      
 
         #region Interface
         public string Code => _code;
@@ -24,15 +24,14 @@ namespace ConsoleApp1
         public float Lethality => _letality;
         public abstract int AgeToInfect { get; }
 
-         int IVirus.DayToRecover => DayToRecover;
+        public abstract int DayToRecover {  get; }
         #endregion
-        protected Virus(string code, bool reinfection, float infection, float letality,int Dayto)
+        protected Virus(string code, bool reinfection, float infection, float letality)
         {
             _code = code;
             _reinfection = reinfection;
             _infection = infection;
             _letality = letality;
-            DayToRecover = Dayto;
         }
 
         abstract public bool Death(Person person);

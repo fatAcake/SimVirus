@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     interface IVirus
     {
-        int DayToRecover {  get; }
+        int DayToRecover { get; }
         string Code { get; }
         bool Reinfection { get; }
         float Lethality { get; }

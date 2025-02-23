@@ -11,12 +11,14 @@ namespace ConsoleApp1
     {
         private static Random rand = new Random();
         public Killar(string code, bool reinfection, float infection,
-            float letality,int da) : base(code, reinfection, infection, letality,da)
+            float letality) : base(code, reinfection, infection, letality)
         {
             _letality = letality+(float)rand.Next(-10, 10) / 100;
         }
 
         public override int AgeToInfect => 12;
+
+        public override int DayToRecover => 6;
 
         public override bool Death(Person person)
         {
